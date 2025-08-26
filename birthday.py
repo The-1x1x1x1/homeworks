@@ -1,0 +1,10 @@
+neil="23/8"
+will="26/6"
+sebastian="3/2"
+russly="16/3"
+rob="26/8"
+print(neil)
+print(will)
+print(sebastian)
+print(russly)
+print(rob)
