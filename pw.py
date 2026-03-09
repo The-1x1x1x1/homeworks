@@ -1,7 +1,15 @@
+import string
 import random
 
-p=[0,0,0,0,0,0,0,0]
-for x in range(8):
-    p[x]=random.randint(48,122) 
-    p[x]=chr(p[x])
-print(str(p))
+l=int(input("enter password length: "))
+cha=string.ascii_letters+string.digits
+
+pw=''
+for i in range(l):
+    pw+=random.choice(cha)
+
+pw2=list(pw)
+random.shuffle(pw2)
+pw=''.join(pw2)
+
+print("generated password: ",pw)
